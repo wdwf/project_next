@@ -34,7 +34,8 @@ export default class MyDocument extends Document {
       <Html lang="pt-br">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
+          <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+          <link rel="icon" type="image/x-icon" href="/favicon.png"/>
         </Head>
         <body>
           <Main />
