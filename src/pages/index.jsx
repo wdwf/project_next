@@ -1,19 +1,25 @@
 import Head from 'next/head'
 
-import cover from '../assets/cover.png'
 import Logo from '../assets/logo.svg'
-import menu from '../assets/menu.png'
 import ArrowRight from '../assets/arrow-right.svg'
 import Arrow from '../assets/arrow.svg'
 
+import ChangeText from '../components/ChangeText'
+
 import { 
-  Container, WrapperContainer, WrapperContent,
-  CoverImage, WrapperTitle, WrapperTextContent,
-  TextContent, SlideContent, WrapperButton, 
-  ButtonFind, ButtonScroll
+  Container, WrapperContainerMain, WrapperContent,
+  CoverImage, TitleMain, WrapperButton, 
+  ButtonFind, ButtonScroll,
+
+  WrapperContentSecondary,TitleSecond
 } from '../styles/Home'
 
 function Home() {
+
+  // function scrollIdOnClick() {
+  //   console.log('clicou');
+  // }
+
   return (
     <Container>
       <Head>
@@ -21,9 +27,9 @@ function Home() {
         <meta name="description" content="Landing Page About Caffe" />
       </Head>
 
-      <WrapperContainer>
+      <WrapperContainerMain>
         <CoverImage
-          src={cover}
+          src='/cover.png'
         />
         <WrapperContent>
           <header>
@@ -31,23 +37,19 @@ function Home() {
               <Logo /> 
               <h1>Njugur</h1>
             </div>
-            <img src={menu}/>
+            <img src='/menu.png'/>
           </header>
 
-          <WrapperTitle>
+          <TitleMain>
             <p>Find your</p>
             <p><span></span>favorite caffe</p>
-          </WrapperTitle>
+          </TitleMain>
 
-          <WrapperTextContent>
-            <TextContent>
-              Don't be confused looking for a cafe for now, you 
-              are lucky to open our platform, just look for the 
-              cafe you want to visit.
-            </TextContent>
-
-            <SlideContent/>
-          </WrapperTextContent>
+          <ChangeText text={ `
+            Don't be confused looking for a cafe for now, you 
+            are lucky to open our platform, just look for the 
+            cafe you want to visit.
+          `}/>
 
           <WrapperButton>
             <ButtonFind>
@@ -62,7 +64,22 @@ function Home() {
           </WrapperButton>
 
         </WrapperContent>
-      </WrapperContainer>
+      </WrapperContainerMain>
+
+      <WrapperContentSecondary>
+        <TitleSecond>
+          <p>Search your<span></span></p>
+          <p>favorite caffe</p>
+        </TitleSecond>
+        <h2>Search your favority caffe</h2>
+        <ChangeText text={
+        `
+          Find a cafe to hang out or work wherever you 
+          want, we have a large list of cafes that are 
+          definitely suitable for you.
+        `
+        } />
+      </WrapperContentSecondary>
       
 
     </Container>
