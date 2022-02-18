@@ -7,6 +7,7 @@ export const WrapperTextContent = styled.div`
 `
 
 export const TextContent = styled.p`
+  max-width: 500px;
   line-height: 36px;
   color: ${props => props.theme.colors.text_primary_opacity};
 `
