@@ -36,11 +36,7 @@ function SectionMain() {
           <p><span></span>favorite caffe</p>
         </TitleMain>
 
-        <ChangeText text={ `
-          Don't be confused looking for a cafe for now, you 
-          are lucky to open our platform, just look for the 
-          cafe you want to visit.
-        `}/>
+        <ChangeText/>
 
         <WrapperButton>
           <ButtonFind>

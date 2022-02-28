@@ -1,5 +1,5 @@
 import {
-  WrapperContentSecondary,TitleSecond, LeftContainer,
+  Container,TitleSecond, WrapperContent, LeftContainer,
   RightContainer, SearchWrapper, InputCaffe,
   ListCaffe, InfoCaffe, InfoCaffeTitle, InfoTitle,
   Amount
@@ -12,76 +12,72 @@ import ChangeText from '../ChangeText';
 
 function SectionSecondary() {
   return (
-    <WrapperContentSecondary id="search">
-      <LeftContainer>
-        <TitleSecond>
-          <p>Search your<span></span></p>
-          <p>favorite caffe</p>
-        </TitleSecond>
-        <ChangeText text={
-        `
-          Find a cafe to hang out or work wherever you 
-          want, we have a large list of cafes that are 
-          definitely suitable for you.
-        `
-        } />
-      </LeftContainer>
+    <Container id="search">
+      <WrapperContent>
+        <LeftContainer>
+          <TitleSecond>
+            <p>Search your<span></span></p>
+            <p>favorite caffe</p>
+          </TitleSecond>
+          <ChangeText/>
+        </LeftContainer>
 
-      <RightContainer>
+        <RightContainer>
 
-        <SearchWrapper>
-          <InputCaffe placeholder='Search name caffe or location here'/>
-          <Search/>
-        </SearchWrapper>
+          <SearchWrapper>
+            <InputCaffe placeholder='Search name caffe or location here'/>
+            <Search/>
+          </SearchWrapper>
 
-        <ListCaffe>
-          <p>List Caffe</p>
-          <a href="#">
-            <p>See all</p>
-            <ArrowRight/>
-          </a>
-        </ListCaffe>
+          <ListCaffe>
+            <p>List Caffe</p>
+            <a href="#">
+              <span>See all</span>
+              <ArrowRight/>
+            </a>
+          </ListCaffe>
 
-        <InfoCaffe>
-          <InfoCaffeTitle>
-            <InfoTitle>Purworkerto</InfoTitle>
-            <Amount>24 caffe</Amount>
-          </InfoCaffeTitle>
-          <hr />
-          <ul>
-            <li>Level Up Caffe</li>
-            <li>Warunk Upnormal</li>
-            <li>Society Coffe House</li>
-            <li>Buntos Caffe</li>
-          </ul>
+          <InfoCaffe>
+            <InfoCaffeTitle>
+              <InfoTitle>Purworkerto</InfoTitle>
+              <Amount>24 caffe</Amount>
+            </InfoCaffeTitle>
+            <hr />
+            <ul>
+              <li>Level Up Caffe</li>
+              <li>Warunk Upnormal</li>
+              <li>Society Coffe House</li>
+              <li>Buntos Caffe</li>
+            </ul>
 
-          <a href="#">
-            <p>See all</p>
-            <ArrowRight/>
-          </a>
-        </InfoCaffe>
+            <a href="#">
+              <p>See all</p>
+              <ArrowRight/>
+            </a>
+          </InfoCaffe>
 
-        <InfoCaffe>
-          <InfoCaffeTitle>
-            <InfoTitle>Semarang</InfoTitle>
-            <Amount>24 caffe</Amount>
-          </InfoCaffeTitle>
-          <hr />
-          <ul>
-            <li>Anagata Caffe</li>
-            <li>Excelso Coffe Rinjani</li>
-            <li>Joltown Coffe & Resto</li>
-            <li>Boskaf Coffe</li>
-          </ul>
+          <InfoCaffe>
+            <InfoCaffeTitle>
+              <InfoTitle>Semarang</InfoTitle>
+              <Amount>24 caffe</Amount>
+            </InfoCaffeTitle>
+            <hr />
+            <ul>
+              <li>Anagata Caffe</li>
+              <li>Excelso Coffe Rinjani</li>
+              <li>Joltown Coffe & Resto</li>
+              <li>Boskaf Coffe</li>
+            </ul>
 
-          <a href="#">
-            <p>See all</p>
-            <ArrowRight/>
-          </a>
-        </InfoCaffe>
-        
-      </RightContainer>
-    </WrapperContentSecondary>
+            <a href="#">
+              <p>See all</p>
+              <ArrowRight/>
+            </a>
+          </InfoCaffe>
+          
+        </RightContainer>
+      </WrapperContent>
+    </Container>
   )
 }
 

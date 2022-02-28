@@ -6,7 +6,8 @@ const theme = {
     text_primary_opacity: 'rgba(225, 225, 230, 0.70)',
     text_secondary: '#222',
     primary: '#8257e6',
-    light: 'rgba(255, 255, 255, 0.671)'
+    light: 'rgba(255, 255, 255, 0.671)',
+    line: '#696969'
   }
 }
 
