@@ -7,6 +7,7 @@ import {
 import SectionMain from '../components/SectionMain';
 import SectionSecondary from '../components/SectionSecondary';
 import Footer from '../components/Footer';
+import SectionThird from '../components/SectionThird';
 
 
 function Home() {
@@ -21,6 +22,8 @@ function Home() {
       <SectionMain/>
 
       <SectionSecondary/>
+
+      <SectionThird/>
       
       <Footer/>
 
