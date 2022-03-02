@@ -1,10 +1,12 @@
 import {
   Container, Title, Locations,
   GalleryImages, Card, ContentText,
-  TitleCard, Spot
+  TitleCard, Spot, SectionNumber,
+  WrapperArrow, ButtonLeft, ButtonRight
 } from './styles';
 
 import Point from '../../assets/point.svg';
+import Arrow from '../../assets/arrow.svg';
 
 function SectionThird() {
   return (
@@ -26,7 +28,7 @@ function SectionThird() {
           <Card>
             <img src="/imageTwo.png" />
             <ContentText>
-              <TitleCard>Society Caffe</TitleCard>
+              <TitleCard>Semlehoy Coffe</TitleCard>
               <Spot>
                 <Point/>
                 <p>Purwokerto, Central Java</p>
@@ -37,7 +39,7 @@ function SectionThird() {
           <Card>
             <img src="/imageThree.png" />
             <ContentText>
-              <TitleCard>Society Caffe</TitleCard>
+              <TitleCard>Teco Caffe</TitleCard>
               <Spot>
                 <Point/>
                 <p>Purwokerto, Central Java</p>
@@ -45,7 +47,23 @@ function SectionThird() {
             </ContentText>
           </Card>
         </GalleryImages>
-        
+        <SectionNumber>
+          <ul>
+            <li><a href="#">01</a></li>
+            <li><a href="#">02</a></li>
+            <li><a href="#">03</a></li>
+            <li><a href="#">04</a></li>
+          </ul>
+          <WrapperArrow>
+            <ButtonLeft>
+              <Arrow/>
+            </ButtonLeft>
+            <ButtonRight>
+              <Arrow/>
+            </ButtonRight>
+          </WrapperArrow>
+        </SectionNumber>
+
       </Locations>
     </Container>
   )

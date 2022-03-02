@@ -54,3 +54,53 @@ export const Spot = styled.div`
     margin-left: 10px;
   }
 `;
+
+export const SectionNumber = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      color: ${props => props.theme.colors.text_primary_opacity};
+      display: flex;
+      margin: 5px;
+
+      &:nth-child(1) {
+        font-weight: 700;
+        font-size: 20px;
+        align-items: center;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 50px;
+          height: 2px;
+          background-color: ${props => props.theme.colors.text_primary};
+          margin-left: 5px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: ${props => props.theme.colors.text_primary};
+      }
+    }
+  }
+`;
+
+export const WrapperArrow = styled.div`
+  display: flex;
+`;
+
+export const ButtonLeft = styled.div`
+  transform: rotate(90deg) scale(.5);
+  cursor: pointer;
+`;
+
+export const ButtonRight = styled.div`
+  transform: rotate(270deg) scale(.5);
+  cursor: pointer;
+`;
