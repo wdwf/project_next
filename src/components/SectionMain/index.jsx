@@ -1,7 +1,7 @@
 import { 
   WrapperContainerMain, WrapperContent,
   CoverImage, TitleMain, WrapperButton, 
-  ButtonFind, ButtonScroll,
+  ButtonFind, ButtonScroll
 } from './styles';
 
 import Logo from '../../assets/logo.svg';
@@ -19,6 +19,7 @@ function SectionMain() {
 
   return (
     <WrapperContainerMain>
+     
       <CoverImage
         src='/cover.png'
       />

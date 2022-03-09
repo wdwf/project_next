@@ -9,6 +9,10 @@ export const WrapperContainerMain = styled.section`
 
 export const CoverImage = styled.img`
   height: 100%;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const WrapperContent = styled.article`

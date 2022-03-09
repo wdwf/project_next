@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { WrapperTextContent, TextContent, SlideContent } from './styles'
+import { WrapperTextContent, TextContent, SlideContent} from './styles'
 
 function ChangeText({text}) { 
 
@@ -15,15 +15,20 @@ function ChangeText({text}) {
     illum facere sed non.
   `
   ]
-
+  
+  const [value, setValue] = useState(0)
   const [frase, setFrase] = useState(0)
 
   useEffect(() =>  {
     const interval = setTimeout(() => {
-      setFrase(frase + 1 < texts.length ? frase + 1 : 0)
-    }, 3000);
+      if (value === 100) {
+        setFrase(frase + 1 < texts.length ? frase + 1 : 0)
+        setValue(0)
+      }
+      setValue(value => value + 1)
+    }, 100);
     return () => clearTimeout(interval)
-  }, [frase]);
+  });
 
   return (
     <WrapperTextContent>
@@ -32,7 +37,7 @@ function ChangeText({text}) {
       </TextContent>
 
       <SlideContent>
-        <div className='line'/>
+        <div className='line' style={{width: `${value}%`}} />
       </SlideContent>
     </WrapperTextContent>
   )

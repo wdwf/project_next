@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const WrapperTextContent = styled.div`
   max-width: 450px;
@@ -18,15 +18,10 @@ export const SlideContent = styled.div`
   height: 2px;
   margin-top: 40px;
   background-color: ${props => props.theme.colors.line};
-
   & .line {
     background-color: ${props => props.theme.colors.background_secondary};
-    width: 0%;
     height: 100%;
-    animation: grow 3100ms linear infinite;
   }
 
-  @keyframes grow {
-    100% {width: 100%}
-  }
+  
 `

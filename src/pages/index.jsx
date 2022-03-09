@@ -21,11 +21,11 @@ function Home() {
 
       <SectionMain/>
 
-      <SectionSecondary/>
+      {/* <SectionSecondary/>
 
-      <SectionThird/>
+      <SectionThird/> 
       
-      <Footer/>
+      <Footer/>*/}
 
     </Container>
   )
